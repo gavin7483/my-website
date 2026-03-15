@@ -234,4 +234,127 @@ export const seoPages = {
       },
     ],
   },
+  "what-does-a-virtual-doula-do": {
+    title: "What Does a Virtual Doula Do",
+    metaTitle:
+      "What Does a Virtual Doula Do? | Kimberly Zoltek New England",
+    description:
+      "Learn what a virtual doula does, how support works online, and how Kimberly Zoltek helps New England families prepare for labor, birth, and postpartum recovery.",
+    eyebrow: "What Does a Virtual Doula Do",
+    heroTitle:
+      "A virtual doula provides steady guidance, education, and support before birth and after baby arrives.",
+    heroDescription:
+      "Kimberly Zoltek helps families feel more prepared and less alone through virtual doula care that is warm, evidence-based, and tailored to real questions that come up during pregnancy, labor, and postpartum.",
+    educationalHeading: "How a virtual doula supports families",
+    educationalParagraphs: [
+      "A virtual doula offers non-medical support through video calls, messaging, planning sessions, and ongoing communication. That support often includes labor preparation, birth planning, partner coaching, breastfeeding guidance, and postpartum check-ins.",
+      "For many families, the most valuable part of virtual support is having a trusted person to turn to with questions. Kimberly helps clients understand what is normal, what options they may want to explore, and how to prepare emotionally and practically for birth.",
+      "Virtual doula care can be especially helpful for families who want continuity, flexibility, and a calm professional presence without being limited by distance or in-person scheduling.",
+    ],
+    benefits: [
+      "Clear education about labor, birth, and postpartum recovery",
+      "Personalized support that fits your family and care setting",
+      "Partner coaching that strengthens teamwork during labor",
+      "Flexible virtual access across New England",
+    ],
+    faqs: [
+      {
+        question: "Does a virtual doula replace my doctor or midwife?",
+        answer:
+          "No. A virtual doula complements your medical care. Kimberly provides emotional support, education, and preparation, while your doctor or midwife remains responsible for medical care and clinical decisions.",
+      },
+      {
+        question: "Can a virtual doula still be helpful if support is not in person?",
+        answer:
+          "Yes. Many families find virtual doula care highly valuable because they receive consistent guidance, planning help, and emotional support throughout pregnancy and postpartum.",
+      },
+      {
+        question: "What topics can I ask a virtual doula about?",
+        answer:
+          "Families often ask about early labor signs, comfort measures, partner support, birth preferences, feeding questions, postpartum recovery, and what to expect at each stage.",
+      },
+    ],
+  },
+  "virtual-vs-in-person-doula": {
+    title: "Virtual vs In-Person Doula",
+    metaTitle:
+      "Virtual vs In-Person Doula Support | Kimberly Zoltek New England",
+    description:
+      "Compare virtual vs in-person doula support, including benefits, differences, and how to decide which kind of care fits your family best.",
+    eyebrow: "Virtual vs In-Person Doula",
+    heroTitle:
+      "Both virtual and in-person doulas offer meaningful support, but the right fit depends on what your family needs most.",
+    heroDescription:
+      "Kimberly Zoltek helps families understand the differences between virtual and in-person doula care so they can choose support that feels practical, reassuring, and aligned with their birth goals.",
+    educationalHeading: "Understanding the difference between virtual and in-person doula care",
+    educationalParagraphs: [
+      "In-person doula care typically includes physical presence during labor, while virtual doula care focuses on education, preparation, communication, and ongoing emotional support delivered remotely. Both models can offer meaningful reassurance and structure.",
+      "Virtual doula support is often a strong fit for families who want professional guidance throughout pregnancy and postpartum, who need flexibility, or who want a lower-barrier way to access doula support across New England.",
+      "Choosing between the two often comes down to your budget, preferences, birth setting, scheduling needs, and whether you want support that centers more on preparation and continuity or on physical presence during labor.",
+    ],
+    benefits: [
+      "Accessible support regardless of location",
+      "Flexible scheduling for prenatal and postpartum sessions",
+      "Strong focus on education, planning, and communication",
+      "A practical option for families who still want expert guidance",
+    ],
+    faqs: [
+      {
+        question: "Is virtual doula care less personal than in-person support?",
+        answer:
+          "Not necessarily. Many families feel deeply supported through virtual care because of the consistency, responsiveness, and personalized preparation it provides over time.",
+      },
+      {
+        question: "How do I know which option is right for me?",
+        answer:
+          "Think about the kind of support you want most. If you value flexibility, ongoing communication, education, and partner preparation, virtual care may be an excellent fit.",
+      },
+      {
+        question: "Can virtual support still help during labor itself?",
+        answer:
+          "Yes. Virtual support can help families stay grounded, use comfort tools, communicate clearly, and adapt when labor unfolds differently than expected.",
+      },
+    ],
+  },
+  "signs-of-early-labor": {
+    title: "Signs of Early Labor",
+    metaTitle:
+      "Signs of Early Labor: What to Expect | Kimberly Zoltek",
+    description:
+      "Learn common signs of early labor, what early labor may feel like, and when to reach out for support. Warm, educational guidance from Kimberly Zoltek.",
+    eyebrow: "Signs of Early Labor",
+    heroTitle:
+      "Early labor can feel uncertain, but understanding the signs can make the beginning feel much less overwhelming.",
+    heroDescription:
+      "Kimberly Zoltek helps families recognize common signs of early labor, understand what is normal, and prepare for the hours ahead with more confidence and calm.",
+    educationalHeading: "What early labor often looks and feels like",
+    educationalParagraphs: [
+      "Early labor can begin with contractions that are mild, irregular, or easy to talk through. Some people also notice cramping, lower back discomfort, loose stools, a shift in energy, or changes in cervical mucus as the body begins preparing for active labor.",
+      "This stage can last for hours and sometimes much longer, especially for first-time parents. That does not necessarily mean anything is wrong. Often, early labor is simply the gradual beginning of a process that will become more intense and regular over time.",
+      "Knowing the signs of early labor can help families pace themselves, rest when possible, hydrate, eat if they can, and avoid feeling like they need to rush before labor is clearly active.",
+    ],
+    benefits: [
+      "Less fear around the earliest signs of labor",
+      "Better pacing and energy conservation before active labor",
+      "More confidence about when to rest, move, or reach out",
+      "Supportive education that helps families stay grounded",
+    ],
+    faqs: [
+      {
+        question: "How do I know if I am in early labor or just having practice contractions?",
+        answer:
+          "Early labor contractions may become more noticeable over time, but they can still be irregular at first. Practice contractions often ease with rest, hydration, or a change in position. When in doubt, it can help to track the pattern and talk it through with a provider or doula.",
+      },
+      {
+        question: "Should I go to the hospital during early labor?",
+        answer:
+          "That depends on your provider's guidance, your medical history, and how labor is progressing. Many families are encouraged to stay home during early labor if everything is low risk and coping feels manageable.",
+      },
+      {
+        question: "What helps during early labor?",
+        answer:
+          "Rest, hydration, gentle movement, calm breathing, a warm shower, nourishing food, and reassurance from a trusted support person can all help make early labor feel more manageable.",
+      },
+    ],
+  },
 } satisfies Record<string, SeoPageContent>;

@@ -1,3 +1,7 @@
+import Image from "next/image";
+import babySupportImage from "@/public/images/baby-support.jpg";
+import kimberlyHeroImage from "@/public/images/kimberly-hero.jpg";
+
 const services = [
   {
     name: "Virtual Labor Preparation",
@@ -165,37 +169,52 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="rounded-[2rem] border border-white/70 bg-white/80 p-8 shadow-[0_24px_70px_rgba(86,68,55,0.12)] backdrop-blur">
-              <p className="text-sm font-semibold uppercase tracking-[0.24em] text-emerald-800">
-                Why families choose Kimberly
-              </p>
-              <div className="mt-6 grid gap-5">
-                <div className="rounded-3xl bg-rose-50 p-5">
-                  <h2 className="text-lg font-semibold text-stone-950">
-                    Professional and deeply reassuring
-                  </h2>
-                  <p className="mt-2 text-sm leading-7 text-stone-600">
-                    Support that blends calm communication, practical tools, and
-                    evidence-based education.
-                  </p>
+            <div className="grid gap-6">
+              <div className="overflow-hidden rounded-[2rem] border border-white/70 bg-white/70 shadow-[0_24px_70px_rgba(86,68,55,0.12)] backdrop-blur">
+                <div className="relative aspect-[4/5]">
+                  <Image
+                    src={kimberlyHeroImage}
+                    alt="Kimberly Zoltek offering warm virtual birth doula support"
+                    priority
+                    placeholder="blur"
+                    sizes="(min-width: 1024px) 34vw, 100vw"
+                    className="h-full w-full object-cover"
+                  />
                 </div>
-                <div className="rounded-3xl bg-emerald-50 p-5">
-                  <h2 className="text-lg font-semibold text-stone-950">
-                    Trusted through every stage
-                  </h2>
-                  <p className="mt-2 text-sm leading-7 text-stone-600">
-                    From birth planning to the early postpartum period, care is
-                    steady, responsive, and centered on your goals.
-                  </p>
-                </div>
-                <div className="rounded-3xl bg-stone-100 p-5">
-                  <h2 className="text-lg font-semibold text-stone-950">
-                    Built for modern families
-                  </h2>
-                  <p className="mt-2 text-sm leading-7 text-stone-600">
-                    Virtual doula care makes experienced support accessible
-                    wherever you are across New England.
-                  </p>
+              </div>
+
+              <div className="rounded-[2rem] border border-white/70 bg-white/80 p-8 shadow-[0_24px_70px_rgba(86,68,55,0.12)] backdrop-blur">
+                <p className="text-sm font-semibold uppercase tracking-[0.24em] text-emerald-800">
+                  Why families choose Kimberly
+                </p>
+                <div className="mt-6 grid gap-5">
+                  <div className="rounded-3xl bg-rose-50 p-5">
+                    <h2 className="text-lg font-semibold text-stone-950">
+                      Professional and deeply reassuring
+                    </h2>
+                    <p className="mt-2 text-sm leading-7 text-stone-600">
+                      Support that blends calm communication, practical tools,
+                      and evidence-based education.
+                    </p>
+                  </div>
+                  <div className="rounded-3xl bg-emerald-50 p-5">
+                    <h2 className="text-lg font-semibold text-stone-950">
+                      Trusted through every stage
+                    </h2>
+                    <p className="mt-2 text-sm leading-7 text-stone-600">
+                      From birth planning to the early postpartum period, care
+                      is steady, responsive, and centered on your goals.
+                    </p>
+                  </div>
+                  <div className="rounded-3xl bg-stone-100 p-5">
+                    <h2 className="text-lg font-semibold text-stone-950">
+                      Built for modern families
+                    </h2>
+                    <p className="mt-2 text-sm leading-7 text-stone-600">
+                      Virtual doula care makes experienced support accessible
+                      wherever you are across New England.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -232,6 +251,15 @@ export default function Home() {
               for labor, strengthen communication with your partner, and move
               into postpartum recovery with confidence.
             </p>
+            <div className="relative mt-4 aspect-[16/10] overflow-hidden rounded-[1.75rem] border border-white/70 shadow-[0_20px_55px_rgba(86,68,55,0.10)]">
+              <Image
+                src={babySupportImage}
+                alt="Gentle postpartum and newborn support imagery"
+                placeholder="blur"
+                sizes="(min-width: 1024px) 44vw, 100vw"
+                className="h-full w-full object-cover"
+              />
+            </div>
           </div>
         </div>
       </section>
