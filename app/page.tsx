@@ -1,6 +1,7 @@
 import Image from "next/image";
 import babySupportImage from "@/public/images/baby-support.jpg";
 import kimberlyHeroImage from "@/public/images/kimberly-hero.jpg";
+import { ContactForm } from "@/app/_components/contact-form";
 
 const services = [
   {
@@ -426,72 +427,7 @@ export default function Home() {
             </div>
           </div>
 
-          <form className="grid gap-4">
-            <div className="grid gap-4 sm:grid-cols-2">
-              <label className="grid gap-2 text-sm font-medium text-stone-700">
-                Name
-                <input
-                  type="text"
-                  name="name"
-                  placeholder="Your full name"
-                  className="rounded-2xl border border-stone-300 px-4 py-3 text-stone-900 outline-none transition focus:border-rose-500"
-                />
-              </label>
-              <label className="grid gap-2 text-sm font-medium text-stone-700">
-                Email
-                <input
-                  type="email"
-                  name="email"
-                  placeholder="you@example.com"
-                  className="rounded-2xl border border-stone-300 px-4 py-3 text-stone-900 outline-none transition focus:border-rose-500"
-                />
-              </label>
-            </div>
-            <div className="grid gap-4 sm:grid-cols-2">
-              <label className="grid gap-2 text-sm font-medium text-stone-700">
-                Due Date
-                <input
-                  type="text"
-                  name="dueDate"
-                  placeholder="Month / estimated due date"
-                  className="rounded-2xl border border-stone-300 px-4 py-3 text-stone-900 outline-none transition focus:border-rose-500"
-                />
-              </label>
-              <label className="grid gap-2 text-sm font-medium text-stone-700">
-                Location
-                <input
-                  type="text"
-                  name="location"
-                  placeholder="City and state"
-                  className="rounded-2xl border border-stone-300 px-4 py-3 text-stone-900 outline-none transition focus:border-rose-500"
-                />
-              </label>
-            </div>
-            <label className="grid gap-2 text-sm font-medium text-stone-700">
-              Type of Support
-              <input
-                type="text"
-                name="support"
-                placeholder="Birth planning, labor prep, postpartum, breastfeeding, or partner coaching"
-                className="rounded-2xl border border-stone-300 px-4 py-3 text-stone-900 outline-none transition focus:border-rose-500"
-              />
-            </label>
-            <label className="grid gap-2 text-sm font-medium text-stone-700">
-              Message
-              <textarea
-                rows={5}
-                name="message"
-                placeholder="Tell Kimberly a little about your family and what kind of support would feel most helpful."
-                className="rounded-2xl border border-stone-300 px-4 py-3 text-stone-900 outline-none transition focus:border-rose-500"
-              />
-            </label>
-            <button
-              type="submit"
-              className="mt-2 inline-flex items-center justify-center rounded-full bg-rose-700 px-6 py-3 text-sm font-semibold text-white transition hover:bg-rose-800"
-            >
-              Book a Free Consultation
-            </button>
-          </form>
+          <ContactForm />
         </div>
       </section>
     </main>
