@@ -1,36 +1,42 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Kimberly Zoltek Virtual Birth Doula Website
+
+A premium single-page Next.js website for Kimberly Zoltek, offering virtual birth doula support for families across New England.
 
 ## Getting Started
 
-First, run the development server:
+Install dependencies and start the development server:
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Build for production with:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+```
 
-## Learn More
+## Site Structure
 
-To learn more about Next.js, take a look at the following resources:
+- `app/page.tsx`: Homepage with About, Services, Testimonials, FAQ, and Contact sections
+- `app/layout.tsx`: Global layout and SEO metadata
+- `app/globals.css`: Tailwind import and global theme variables
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Content Notes
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Testimonials are placeholder copy and should be replaced with real client feedback before launch.
+- The contact form is styled and ready for integration with a form handling solution such as Formspree, Basin, or a custom API route.
 
 ## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+This project is ready for Vercel deployment.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. Push the repository to GitHub.
+2. Import the repo into Vercel.
+3. Use the default Next.js build settings.
+4. Add a form provider or server action before launch if you want the contact form to submit real inquiries.
+
+For a production-ready contact workflow, connect the form to an API route or third-party form backend after deployment.

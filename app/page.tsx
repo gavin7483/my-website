@@ -1,115 +1,201 @@
 const services = [
   {
-    name: "Strategy & Positioning",
+    name: "Virtual Labor Preparation",
     description:
-      "Clarify your message, sharpen your offer, and align your team around a growth plan that fits the market.",
+      "Build confidence before birth with personalized education, comfort strategies, and practical planning for labor and delivery.",
   },
   {
-    name: "Design Systems",
+    name: "Partner Coaching",
     description:
-      "Create polished digital experiences with scalable components, consistent branding, and a user-first interface.",
+      "Help your partner feel calm, prepared, and useful with clear guidance on advocacy, emotional support, and hands-on comfort techniques.",
   },
   {
-    name: "Delivery & Optimization",
+    name: "Breastfeeding Support",
     description:
-      "Launch faster with dependable execution, then improve conversion and retention through measurable iteration.",
+      "Receive lactation-informed support for latch, feeding questions, and early postpartum adjustments in the days after birth.",
+  },
+  {
+    name: "Postpartum Recovery Guidance",
+    description:
+      "Get steady, compassionate guidance as you recover, adjust to life with your baby, and build routines that support rest and healing.",
+  },
+  {
+    name: "Birth Planning Support",
+    description:
+      "Create a thoughtful birth plan that reflects your values, preferences, and medical context while staying flexible for real-life decisions.",
   },
 ];
 
 const testimonials = [
   {
     quote:
-      "Their team helped us turn a fragmented website into a focused sales tool. The result felt premium and performed immediately.",
-    name: "Maya Chen",
-    role: "Head of Marketing, Northline",
+      "Before labor started I was terrified. Kimberly helped me understand what was happening in my body and coached both me and my husband through every stage. When contractions intensified, she was the calm voice that reminded me I could do it. I honestly don't know how we would have gotten through that experience without her.",
+    name: "Sarah",
+    role: "Client testimonial",
   },
   {
     quote:
-      "From kickoff to launch, the process was clear, efficient, and highly strategic. We finally have a site that reflects the business.",
-    name: "Daniel Brooks",
-    role: "Founder, Harbor Advisory",
+      "As the partner, I didn't know what my role would be during labor. Kimberly showed me exactly how to support my wife - from breathing techniques to positioning during contractions. Instead of feeling helpless, I felt like part of the team. That changed the entire experience for us.",
+    name: "Jessica",
+    role: "Partner testimonial",
   },
   {
     quote:
-      "They balanced design quality with practical execution. Every section had a purpose, and our inbound inquiries increased within weeks.",
-    name: "Olivia Grant",
-    role: "Operations Director, Fieldstone",
+      "When things didn't go the way we expected during labor, Kimberly kept us calm and helped us understand every decision being made. She advocated for us and made sure we felt informed and supported the entire time.",
+    name: "Luna",
+    role: "Client testimonial",
+  },
+];
+
+const faqs = [
+  {
+    question: "How does virtual doula support work?",
+    answer:
+      "Support is provided through video calls, messaging, and scheduled check-ins. Kimberly helps you prepare before birth, supports decision-making, coaches your partner, and remains a steady resource through postpartum recovery.",
+  },
+  {
+    question: "Who is virtual support best suited for?",
+    answer:
+      "Virtual support is a strong fit for families who want professional guidance, preparation, and continuity of care regardless of location, hospital policy, or scheduling constraints.",
+  },
+  {
+    question: "Do you support both first-time and experienced parents?",
+    answer:
+      "Yes. Care is tailored to each family, whether you are preparing for your first baby or wanting a different kind of support for a later birth.",
+  },
+  {
+    question: "What makes your approach evidence-based?",
+    answer:
+      "Kimberly combines hands-on experience with lactation certification, training through DONA and DTI, and ongoing education as a midwife assistant to provide support grounded in current best practices.",
   },
 ];
 
 export default function Home() {
+  const calendlyUrl =
+    "https://calendly.com/macagent7483/free-20-minute-birth-consultation";
+
   return (
-    <main className="min-h-screen bg-[linear-gradient(180deg,#f7f9fc_0%,#ffffff_32%,#eef4f1_100%)] text-slate-900">
+    <main className="min-h-screen bg-[linear-gradient(180deg,#fff9f8_0%,#f9f5f2_36%,#f2f6f4_100%)] text-stone-800">
       <section className="relative overflow-hidden">
-        <div className="absolute inset-x-0 top-0 -z-10 h-96 bg-[radial-gradient(circle_at_top_left,_rgba(22,163,74,0.18),_transparent_42%),radial-gradient(circle_at_top_right,_rgba(15,23,42,0.14),_transparent_34%)]" />
-        <div className="mx-auto flex max-w-6xl flex-col gap-16 px-6 py-8 lg:px-8">
-          <header className="flex items-center justify-between">
-            <div className="text-lg font-semibold tracking-[0.18em] text-slate-800 uppercase">
-              Northstar Studio
+        <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_top_left,_rgba(244,196,183,0.38),_transparent_38%),radial-gradient(circle_at_top_right,_rgba(179,204,197,0.32),_transparent_32%),linear-gradient(180deg,_#fffdfc_0%,_#f8f4f1_100%)]" />
+        <div className="mx-auto max-w-6xl px-6 py-8 lg:px-8">
+          <header className="flex flex-col gap-5 rounded-full border border-white/70 bg-white/70 px-5 py-4 shadow-[0_12px_35px_rgba(86,68,55,0.08)] backdrop-blur md:flex-row md:items-center md:justify-between">
+            <div>
+              <p className="text-xs font-semibold uppercase tracking-[0.35em] text-rose-700">
+                Kimberly Zoltek
+              </p>
+              <p className="mt-1 text-sm text-stone-600">
+                Virtual birth doula support for families in New England
+              </p>
             </div>
+            <nav className="flex flex-wrap gap-4 text-sm text-stone-600">
+              <a href="#about" className="transition hover:text-stone-950">
+                About
+              </a>
+              <a href="#services" className="transition hover:text-stone-950">
+                Services
+              </a>
+              <a
+                href="#testimonials"
+                className="transition hover:text-stone-950"
+              >
+                Testimonials
+              </a>
+              <a href="#faq" className="transition hover:text-stone-950">
+                FAQ
+              </a>
+              <a href="#contact" className="transition hover:text-stone-950">
+                Contact
+              </a>
+            </nav>
             <a
               href="#contact"
-              className="rounded-full border border-slate-300 bg-white/80 px-5 py-2 text-sm font-medium text-slate-700 shadow-sm backdrop-blur transition hover:border-slate-900 hover:text-slate-900"
+              className="inline-flex items-center justify-center rounded-full bg-stone-900 px-5 py-3 text-sm font-semibold text-white transition hover:bg-stone-800"
             >
-              Schedule a Call
+              Book a Free Consultation
             </a>
           </header>
 
-          <div className="grid gap-12 pb-14 pt-8 lg:grid-cols-[1.2fr_0.8fr] lg:items-center">
+          <div className="grid gap-12 py-20 lg:grid-cols-[1.15fr_0.85fr] lg:items-center lg:py-24">
             <div className="max-w-3xl">
-              <p className="mb-5 inline-flex rounded-full border border-emerald-200 bg-emerald-50 px-4 py-2 text-sm font-medium text-emerald-800">
-                Modern digital presence for service-led businesses
+              <p className="inline-flex rounded-full border border-rose-200 bg-white/80 px-4 py-2 text-sm font-medium text-rose-800 shadow-sm">
+                Warm, evidence-based virtual support through pregnancy, birth,
+                and postpartum
               </p>
-              <h1 className="max-w-2xl text-5xl font-semibold tracking-tight text-slate-950 sm:text-6xl">
-                Build trust faster with a landing page designed to convert.
+              <h1 className="mt-6 text-5xl font-semibold tracking-tight text-stone-950 sm:text-6xl">
+                Calm, compassionate birth doula care from wherever you are in
+                New England.
               </h1>
-              <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-600">
-                We help ambitious teams turn expertise into a clear, compelling
-                online presence with messaging, design, and structure that move
-                visitors to action.
+              <p className="mt-6 max-w-2xl text-lg leading-8 text-stone-600">
+                Kimberly Zoltek helps families feel informed, supported, and
+                steady through labor preparation, partner coaching,
+                breastfeeding support, and postpartum recovery guidance.
               </p>
               <div className="mt-10 flex flex-col gap-4 sm:flex-row">
                 <a
                   href="#contact"
-                  className="inline-flex items-center justify-center rounded-full bg-slate-950 px-6 py-3 text-sm font-semibold text-white transition hover:bg-slate-800"
+                  className="inline-flex items-center justify-center rounded-full bg-rose-700 px-6 py-3 text-sm font-semibold text-white transition hover:bg-rose-800"
                 >
-                  Book a Consultation
+                  Book a Free Consultation
                 </a>
                 <a
                   href="#services"
-                  className="inline-flex items-center justify-center rounded-full border border-slate-300 px-6 py-3 text-sm font-semibold text-slate-700 transition hover:border-slate-950 hover:text-slate-950"
+                  className="inline-flex items-center justify-center rounded-full border border-stone-300 bg-white/80 px-6 py-3 text-sm font-semibold text-stone-700 transition hover:border-stone-900 hover:text-stone-950"
                 >
                   Explore Services
                 </a>
               </div>
-            </div>
-
-            <div className="rounded-[2rem] border border-white/60 bg-white/80 p-8 shadow-[0_24px_80px_rgba(15,23,42,0.10)] backdrop-blur">
-              <div className="grid gap-6">
-                <div>
-                  <p className="text-sm font-medium uppercase tracking-[0.2em] text-slate-500">
-                    Results Snapshot
-                  </p>
-                  <p className="mt-3 text-4xl font-semibold text-slate-950">
-                    32%
-                  </p>
-                  <p className="mt-2 text-sm leading-6 text-slate-600">
-                    average increase in qualified inbound leads after launch.
+              <div className="mt-10 grid gap-4 sm:grid-cols-3">
+                <div className="rounded-3xl border border-white/80 bg-white/70 p-5 shadow-sm">
+                  <p className="text-3xl font-semibold text-stone-950">109</p>
+                  <p className="mt-1 text-sm text-stone-600">Births supported</p>
+                </div>
+                <div className="rounded-3xl border border-white/80 bg-white/70 p-5 shadow-sm">
+                  <p className="text-3xl font-semibold text-stone-950">200+</p>
+                  <p className="mt-1 text-sm text-stone-600">
+                    Postpartum families served
                   </p>
                 </div>
-                <div className="grid gap-4 border-t border-slate-200 pt-6 sm:grid-cols-2">
-                  <div className="rounded-2xl bg-slate-50 p-4">
-                    <p className="text-2xl font-semibold text-slate-950">4-6 weeks</p>
-                    <p className="mt-1 text-sm text-slate-600">
-                      Typical turnaround from strategy to release.
-                    </p>
-                  </div>
-                  <div className="rounded-2xl bg-emerald-50 p-4">
-                    <p className="text-2xl font-semibold text-slate-950">Senior-led</p>
-                    <p className="mt-1 text-sm text-slate-600">
-                      Every project is handled with direct expert oversight.
-                    </p>
-                  </div>
+                <div className="rounded-3xl border border-white/80 bg-white/70 p-5 shadow-sm">
+                  <p className="text-3xl font-semibold text-stone-950">DONA + DTI</p>
+                  <p className="mt-1 text-sm text-stone-600">
+                    Professional training foundation
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="rounded-[2rem] border border-white/70 bg-white/80 p-8 shadow-[0_24px_70px_rgba(86,68,55,0.12)] backdrop-blur">
+              <p className="text-sm font-semibold uppercase tracking-[0.24em] text-emerald-800">
+                Why families choose Kimberly
+              </p>
+              <div className="mt-6 grid gap-5">
+                <div className="rounded-3xl bg-rose-50 p-5">
+                  <h2 className="text-lg font-semibold text-stone-950">
+                    Professional and deeply reassuring
+                  </h2>
+                  <p className="mt-2 text-sm leading-7 text-stone-600">
+                    Support that blends calm communication, practical tools, and
+                    evidence-based education.
+                  </p>
+                </div>
+                <div className="rounded-3xl bg-emerald-50 p-5">
+                  <h2 className="text-lg font-semibold text-stone-950">
+                    Trusted through every stage
+                  </h2>
+                  <p className="mt-2 text-sm leading-7 text-stone-600">
+                    From birth planning to the early postpartum period, care is
+                    steady, responsive, and centered on your goals.
+                  </p>
+                </div>
+                <div className="rounded-3xl bg-stone-100 p-5">
+                  <h2 className="text-lg font-semibold text-stone-950">
+                    Built for modern families
+                  </h2>
+                  <p className="mt-2 text-sm leading-7 text-stone-600">
+                    Virtual doula care makes experienced support accessible
+                    wherever you are across New England.
+                  </p>
                 </div>
               </div>
             </div>
@@ -118,26 +204,33 @@ export default function Home() {
       </section>
 
       <section id="about" className="mx-auto max-w-6xl px-6 py-20 lg:px-8">
-        <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
+        <div className="grid gap-10 lg:grid-cols-[0.95fr_1.05fr] lg:items-start">
           <div>
-            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-emerald-700">
-              About
+            <p className="text-sm font-semibold uppercase tracking-[0.24em] text-rose-700">
+              About Kimberly
             </p>
-            <h2 className="mt-4 text-3xl font-semibold tracking-tight text-slate-950 sm:text-4xl">
-              A focused partner for businesses that need clarity, not clutter.
+            <h2 className="mt-4 text-3xl font-semibold tracking-tight text-stone-950 sm:text-4xl">
+              Experienced virtual doula support rooted in trust, education, and
+              calm guidance.
             </h2>
           </div>
-          <div className="grid gap-6 text-lg leading-8 text-slate-600">
+          <div className="grid gap-6 text-lg leading-8 text-stone-600">
             <p>
-              Northstar Studio creates business websites that are refined,
-              credible, and built around clear decision-making. We combine
-              messaging strategy, visual direction, and practical implementation
-              into one streamlined engagement.
+              Kimberly Zoltek supports families throughout New England with
+              thoughtful virtual birth doula care that helps them feel informed,
+              prepared, and genuinely supported. She has supported 109 births
+              and more than 200 postpartum families.
             </p>
             <p>
-              The outcome is a landing page that helps clients understand your
-              value quickly, trust your brand sooner, and take the next step
-              with confidence.
+              Her background includes lactation certification, training through
+              DONA and DTI, and ongoing education as a midwife assistant. That
+              combination shapes an approach that is warm, professional, and
+              grounded in evidence-based care.
+            </p>
+            <p>
+              Kimberly&apos;s role is to help you understand your options, prepare
+              for labor, strengthen communication with your partner, and move
+              into postpartum recovery with confidence.
             </p>
           </div>
         </div>
@@ -145,30 +238,36 @@ export default function Home() {
 
       <section id="services" className="mx-auto max-w-6xl px-6 py-20 lg:px-8">
         <div className="flex flex-col gap-4">
-          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-emerald-700">
+          <p className="text-sm font-semibold uppercase tracking-[0.24em] text-rose-700">
             Services
           </p>
-          <h2 className="text-3xl font-semibold tracking-tight text-slate-950 sm:text-4xl">
-            End-to-end support for a stronger online presence.
+          <h2 className="text-3xl font-semibold tracking-tight text-stone-950 sm:text-4xl">
+            Personalized support before birth, during labor, and into
+            postpartum recovery.
           </h2>
-          <p className="max-w-2xl text-lg leading-8 text-slate-600">
-            Each engagement is built to help your business look sharper, sound
-            clearer, and convert more effectively.
+          <p className="max-w-3xl text-lg leading-8 text-stone-600">
+            Each service is designed to make your experience feel more
+            informed, connected, and manageable, with direct support tailored to
+            your family&apos;s needs.
           </p>
         </div>
-        <div className="mt-12 grid gap-6 md:grid-cols-3">
+        <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
           {services.map((service) => (
             <article
               key={service.name}
-              className="rounded-[1.75rem] border border-slate-200 bg-white p-8 shadow-sm transition hover:-translate-y-1 hover:shadow-lg"
+              className="rounded-[1.75rem] border border-stone-200 bg-white/85 p-8 shadow-[0_18px_40px_rgba(86,68,55,0.06)] transition hover:-translate-y-1 hover:shadow-[0_22px_50px_rgba(86,68,55,0.10)]"
             >
-              <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-slate-950 text-sm font-semibold text-white">
-                {service.name.slice(0, 2).toUpperCase()}
+              <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-rose-100 text-sm font-semibold text-rose-800">
+                {service.name
+                  .split(" ")
+                  .slice(0, 2)
+                  .map((word) => word[0])
+                  .join("")}
               </div>
-              <h3 className="mt-6 text-xl font-semibold text-slate-950">
+              <h3 className="mt-6 text-xl font-semibold text-stone-950">
                 {service.name}
               </h3>
-              <p className="mt-4 leading-7 text-slate-600">
+              <p className="mt-4 leading-7 text-stone-600">
                 {service.description}
               </p>
             </article>
@@ -176,29 +275,53 @@ export default function Home() {
         </div>
       </section>
 
-      <section
-        id="testimonials"
-        className="bg-slate-950 py-20 text-white"
-      >
+      <section className="mx-auto max-w-6xl px-6 py-8 lg:px-8">
+        <div className="rounded-[2rem] border border-rose-200 bg-[linear-gradient(135deg,#fff7f4_0%,#fffdfa_60%,#f4f8f6_100%)] p-8 shadow-[0_18px_45px_rgba(86,68,55,0.08)] lg:flex lg:items-center lg:justify-between lg:gap-10 lg:p-10">
+          <div className="max-w-3xl">
+            <p className="text-sm font-semibold uppercase tracking-[0.24em] text-rose-700">
+              Free Consultation
+            </p>
+            <h2 className="mt-3 text-3xl font-semibold tracking-tight text-stone-950">
+              Start with a no-pressure conversation about the support your
+              family needs.
+            </h2>
+            <p className="mt-4 text-lg leading-8 text-stone-600">
+              Kimberly offers a free consultation so you can ask questions,
+              discuss your goals, and see whether virtual doula support is the
+              right fit.
+            </p>
+          </div>
+          <div className="mt-6 lg:mt-0">
+            <a
+              href="#contact"
+              className="inline-flex items-center justify-center rounded-full bg-stone-950 px-6 py-3 text-sm font-semibold text-white transition hover:bg-stone-800"
+            >
+              Book a Free Consultation
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section id="testimonials" className="bg-stone-950 py-20 text-white">
         <div className="mx-auto max-w-6xl px-6 lg:px-8">
-          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-emerald-300">
+          <p className="text-sm font-semibold uppercase tracking-[0.24em] text-rose-300">
             Testimonials
           </p>
           <h2 className="mt-4 text-3xl font-semibold tracking-tight sm:text-4xl">
-            Trusted by teams that need their website to work harder.
+            Families deserve support that feels calm, capable, and deeply human.
           </h2>
           <div className="mt-12 grid gap-6 lg:grid-cols-3">
             {testimonials.map((testimonial) => (
               <figure
-                key={testimonial.name}
+                key={`${testimonial.name}-${testimonial.role}`}
                 className="rounded-[1.75rem] border border-white/10 bg-white/5 p-8 backdrop-blur"
               >
-                <blockquote className="text-lg leading-8 text-slate-100">
+                <blockquote className="text-lg leading-8 text-stone-100">
                   “{testimonial.quote}”
                 </blockquote>
                 <figcaption className="mt-8">
                   <div className="font-semibold">{testimonial.name}</div>
-                  <div className="text-sm text-slate-300">
+                  <div className="text-sm text-stone-300">
                     {testimonial.role}
                   </div>
                 </figcaption>
@@ -208,61 +331,137 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="contact" className="mx-auto max-w-6xl px-6 py-20 lg:px-8">
-        <div className="grid gap-10 rounded-[2rem] border border-slate-200 bg-white p-8 shadow-[0_20px_60px_rgba(15,23,42,0.08)] lg:grid-cols-[0.9fr_1.1fr] lg:p-12">
+      <section id="faq" className="mx-auto max-w-6xl px-6 py-20 lg:px-8">
+        <div className="grid gap-6 lg:grid-cols-[0.8fr_1.2fr]">
           <div>
-            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-emerald-700">
+            <p className="text-sm font-semibold uppercase tracking-[0.24em] text-rose-700">
+              FAQ
+            </p>
+            <h2 className="mt-4 text-3xl font-semibold tracking-tight text-stone-950 sm:text-4xl">
+              Common questions from growing families.
+            </h2>
+          </div>
+          <div className="grid gap-4">
+            {faqs.map((faq) => (
+              <details
+                key={faq.question}
+                className="rounded-[1.5rem] border border-stone-200 bg-white/85 p-6 shadow-sm"
+              >
+                <summary className="cursor-pointer list-none text-lg font-semibold text-stone-950">
+                  {faq.question}
+                </summary>
+                <p className="mt-4 leading-7 text-stone-600">{faq.answer}</p>
+              </details>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" className="mx-auto max-w-6xl px-6 py-20 lg:px-8">
+        <div className="grid gap-10 rounded-[2rem] border border-stone-200 bg-white/90 p-8 shadow-[0_24px_60px_rgba(86,68,55,0.08)] lg:grid-cols-[0.88fr_1.12fr] lg:p-12">
+          <div>
+            <p className="text-sm font-semibold uppercase tracking-[0.24em] text-rose-700">
               Contact
             </p>
-            <h2 className="mt-4 text-3xl font-semibold tracking-tight text-slate-950 sm:text-4xl">
-              Ready to elevate your online presence?
+            <h2 className="mt-4 text-3xl font-semibold tracking-tight text-stone-950 sm:text-4xl">
+              Reach out to book your free consultation.
             </h2>
-            <p className="mt-5 max-w-xl text-lg leading-8 text-slate-600">
-              Tell us about your business, your goals, and what your current
-              website is missing. We&apos;ll map out a focused next step.
+            <p className="mt-5 max-w-xl text-lg leading-8 text-stone-600">
+              Share your due date, where you are in your pregnancy or postpartum
+              journey, and the kind of support you are looking for. This form is
+              ready for a future form handling provider when you deploy to
+              Vercel.
             </p>
+            <div className="mt-8 rounded-3xl bg-stone-100 p-5 text-sm leading-7 text-stone-600">
+              <p className="font-semibold text-stone-900">Best fit for:</p>
+              <p>
+                Families in Massachusetts, Connecticut, Rhode Island, Vermont,
+                New Hampshire, and Maine seeking warm, virtual, professional
+                support.
+              </p>
+            </div>
+
+            <div className="mt-8 overflow-hidden rounded-[1.75rem] border border-stone-200 bg-stone-50 shadow-sm">
+              <div className="border-b border-stone-200 px-5 py-4">
+                <h3 className="text-lg font-semibold text-stone-950">
+                  Free 20 Minute Consultation
+                </h3>
+                <p className="mt-1 text-sm text-stone-600">
+                  Book directly on the calendar below.
+                </p>
+              </div>
+              <iframe
+                title="Book a free 20 minute consultation with Kimberly Zoltek"
+                src={calendlyUrl}
+                className="h-[700px] w-full"
+              />
+            </div>
           </div>
 
           <form className="grid gap-4">
             <div className="grid gap-4 sm:grid-cols-2">
-              <label className="grid gap-2 text-sm font-medium text-slate-700">
+              <label className="grid gap-2 text-sm font-medium text-stone-700">
                 Name
                 <input
                   type="text"
-                  placeholder="Your name"
-                  className="rounded-2xl border border-slate-300 px-4 py-3 text-slate-900 outline-none transition focus:border-emerald-600"
+                  name="name"
+                  placeholder="Your full name"
+                  className="rounded-2xl border border-stone-300 px-4 py-3 text-stone-900 outline-none transition focus:border-rose-500"
                 />
               </label>
-              <label className="grid gap-2 text-sm font-medium text-slate-700">
+              <label className="grid gap-2 text-sm font-medium text-stone-700">
                 Email
                 <input
                   type="email"
-                  placeholder="you@company.com"
-                  className="rounded-2xl border border-slate-300 px-4 py-3 text-slate-900 outline-none transition focus:border-emerald-600"
+                  name="email"
+                  placeholder="you@example.com"
+                  className="rounded-2xl border border-stone-300 px-4 py-3 text-stone-900 outline-none transition focus:border-rose-500"
                 />
               </label>
             </div>
-            <label className="grid gap-2 text-sm font-medium text-slate-700">
-              Company
+            <div className="grid gap-4 sm:grid-cols-2">
+              <label className="grid gap-2 text-sm font-medium text-stone-700">
+                Due Date
+                <input
+                  type="text"
+                  name="dueDate"
+                  placeholder="Month / estimated due date"
+                  className="rounded-2xl border border-stone-300 px-4 py-3 text-stone-900 outline-none transition focus:border-rose-500"
+                />
+              </label>
+              <label className="grid gap-2 text-sm font-medium text-stone-700">
+                Location
+                <input
+                  type="text"
+                  name="location"
+                  placeholder="City and state"
+                  className="rounded-2xl border border-stone-300 px-4 py-3 text-stone-900 outline-none transition focus:border-rose-500"
+                />
+              </label>
+            </div>
+            <label className="grid gap-2 text-sm font-medium text-stone-700">
+              Type of Support
               <input
                 type="text"
-                placeholder="Company name"
-                className="rounded-2xl border border-slate-300 px-4 py-3 text-slate-900 outline-none transition focus:border-emerald-600"
+                name="support"
+                placeholder="Birth planning, labor prep, postpartum, breastfeeding, or partner coaching"
+                className="rounded-2xl border border-stone-300 px-4 py-3 text-stone-900 outline-none transition focus:border-rose-500"
               />
             </label>
-            <label className="grid gap-2 text-sm font-medium text-slate-700">
-              Project Details
+            <label className="grid gap-2 text-sm font-medium text-stone-700">
+              Message
               <textarea
                 rows={5}
-                placeholder="What are you building, and what outcome do you want?"
-                className="rounded-2xl border border-slate-300 px-4 py-3 text-slate-900 outline-none transition focus:border-emerald-600"
+                name="message"
+                placeholder="Tell Kimberly a little about your family and what kind of support would feel most helpful."
+                className="rounded-2xl border border-stone-300 px-4 py-3 text-stone-900 outline-none transition focus:border-rose-500"
               />
             </label>
             <button
               type="submit"
-              className="mt-2 inline-flex items-center justify-center rounded-full bg-slate-950 px-6 py-3 text-sm font-semibold text-white transition hover:bg-slate-800"
+              className="mt-2 inline-flex items-center justify-center rounded-full bg-rose-700 px-6 py-3 text-sm font-semibold text-white transition hover:bg-rose-800"
             >
-              Send Inquiry
+              Book a Free Consultation
             </button>
           </form>
         </div>

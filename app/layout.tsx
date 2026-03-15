@@ -2,8 +2,18 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "My Website",
-  description: "A Next.js app built with TypeScript and Tailwind CSS.",
+  title: "Kimberly Zoltek | Virtual Birth Doula Support in New England",
+  description:
+    "Warm, evidence-based virtual birth doula support for families in New England. Kimberly Zoltek offers labor preparation, partner coaching, breastfeeding support, postpartum guidance, and birth planning.",
+  keywords: [
+    "virtual birth doula",
+    "New England doula",
+    "birth planning support",
+    "breastfeeding support",
+    "postpartum recovery guidance",
+    "partner coaching",
+    "Kimberly Zoltek",
+  ],
 };
 
 export default function RootLayout({
@@ -13,7 +23,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className="antialiased">{children}</body>
     </html>
   );
 }
