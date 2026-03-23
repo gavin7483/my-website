@@ -77,7 +77,7 @@ const faqs = [
 
 export default function Home() {
   const calendlyUrl =
-    "https://calendly.com/macagent7483/free-20-minute-birth-consultation";
+    "https://calendly.com/macagent7483/free-20-minute-birth-consultation?hide_event_type_details=1&hide_gdpr_banner=1";
 
   return (
     <main className="min-h-screen bg-[linear-gradient(180deg,#fff9f8_0%,#f9f5f2_36%,#f2f6f4_100%)] text-stone-800">
@@ -417,6 +417,9 @@ export default function Home() {
                 </h3>
                 <p className="mt-1 text-sm text-stone-600">
                   Book directly on the calendar below.
+                </p>
+                <p className="mt-2 text-sm font-medium text-stone-700">
+                  Kimberly Zoltek
                 </p>
               </div>
               <iframe
