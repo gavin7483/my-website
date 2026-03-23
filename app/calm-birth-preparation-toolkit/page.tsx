@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Calm Birth Preparation Toolkit | Kimberly Zoltek",
+  title: "Birth Plan Toolkit | Kimberly Zoltek",
   description:
-    "A warm, practical digital toolkit to help expecting parents feel informed, steady, and empowered as they prepare for labor, birth, and early postpartum.",
+    "A warm, practical digital toolkit to help expecting parents feel informed, steady, and prepared as they create a clear, flexible birth plan.",
 };
 
 const includedItems = [
@@ -49,21 +49,23 @@ export default function CalmBirthPreparationToolkitPage() {
                 Digital Product
               </p>
               <h1 className="mt-4 text-4xl font-semibold tracking-tight text-stone-950 sm:text-5xl">
-                Calm Birth Preparation Toolkit
+                Birth Plan Toolkit
               </h1>
               <p className="mt-6 max-w-2xl text-lg leading-8 text-stone-600">
                 A warm, practical resource designed to help expecting parents
-                feel informed, emotionally grounded, and more prepared for labor,
-                birth, and the early postpartum transition.
+                feel informed, emotionally grounded, and more prepared for labor
+                and the decisions that can come with it.
               </p>
               <p className="mt-4 max-w-2xl text-lg leading-8 text-stone-600">
                 This toolkit brings together education, planning, and partner
-                support in one place, so families can prepare with clarity
-                instead of pressure.
+                support in one place, so families can prepare with more clarity
+                and less last-minute stress.
               </p>
               <div className="mt-8 flex flex-col gap-4 sm:flex-row">
                 <a
-                  href="#buy"
+                  href="https://buy.stripe.com/4gM5kE6U03qb5jZgEU0RG00"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center justify-center rounded-full bg-rose-700 px-6 py-3 text-sm font-semibold text-white transition hover:bg-rose-800"
                 >
                   Buy the Toolkit
@@ -108,7 +110,7 @@ export default function CalmBirthPreparationToolkitPage() {
           </div>
           <div className="grid gap-5 text-lg leading-8 text-stone-600">
             <p>
-              The Calm Birth Preparation Toolkit is designed for expecting
+              The Birth Plan Toolkit is designed for expecting
               parents who want trustworthy guidance in a format they can return
               to at their own pace. It combines practical education with gentle
               structure, helping families prepare for birth in a way that feels
@@ -194,21 +196,21 @@ export default function CalmBirthPreparationToolkitPage() {
               A simple, empowering resource for families preparing for birth.
             </h2>
             <p className="mt-4 text-lg leading-8 text-stone-600">
-              Get immediate access to the Calm Birth Preparation Toolkit for
-              <span className="font-semibold text-stone-950"> $49</span>.
+              Get immediate access to the Birth Plan Toolkit for
+              <span className="font-semibold text-stone-950"> $19</span>.
             </p>
             <p className="mt-3 text-sm leading-7 text-stone-500">
-              Replace the purchase link below with your checkout page, Stripe
-              payment link, or digital product platform URL.
+              Secure checkout opens in a new tab so you can complete your order
+              and come right back to the site.
             </p>
           </div>
           <a
-            href="https://example.com/buy-calm-birth-preparation-toolkit"
+            href="https://buy.stripe.com/4gM5kE6U03qb5jZgEU0RG00"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center rounded-full bg-stone-950 px-8 py-4 text-sm font-semibold text-white transition hover:bg-stone-800"
           >
-            Buy Now
+            Get the Toolkit
           </a>
         </div>
       </section>

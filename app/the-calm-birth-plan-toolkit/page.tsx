@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "The Calm Birth Plan Toolkit | Kimberly Zoltek",
+  title: "Birth Plan Toolkit | Kimberly Zoltek",
   description:
     "A printable, supportive birth planning toolkit with a fillable birth plan template, hospital bag checklist, partner support cheat sheet, and scripts for communicating with staff.",
 };
@@ -112,7 +112,7 @@ export default function CalmBirthPlanToolkitPage() {
             Kimberly Zoltek
           </p>
           <h1 className="mt-4 text-4xl font-semibold tracking-tight text-stone-950 sm:text-5xl">
-            The Calm Birth Plan Toolkit
+            Birth Plan Toolkit
           </h1>
           <p className="mt-5 max-w-3xl text-lg leading-8 text-stone-600">
             A printable planning guide designed to help expecting parents feel
@@ -268,7 +268,7 @@ export default function CalmBirthPlanToolkitPage() {
             rel="noopener noreferrer"
             className="mt-6 inline-flex items-center justify-center rounded-full bg-stone-950 px-8 py-4 text-sm font-semibold text-white transition hover:bg-stone-800 print:hidden"
           >
-            Buy the Toolkit
+            Get the Toolkit
           </a>
         </section>
       </div>

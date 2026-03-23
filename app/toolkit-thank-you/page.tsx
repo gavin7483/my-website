@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Thank You | Calm Birth Plan Toolkit",
+  title: "Thank You | Birth Plan Toolkit",
   description:
-    "Thank you for purchasing the Calm Birth Plan Toolkit. Access your download and next steps here.",
+    "Thank you for purchasing the Birth Plan Toolkit. Access your download and next steps here.",
 };
 
 export default function ToolkitThankYouPage() {
@@ -16,7 +16,7 @@ export default function ToolkitThankYouPage() {
             Purchase Complete
           </p>
           <h1 className="mt-4 text-4xl font-semibold tracking-tight text-stone-950 sm:text-5xl">
-            Thank you for purchasing the Calm Birth Plan Toolkit
+            Thank you for purchasing the Birth Plan Toolkit
           </h1>
           <p className="mt-6 max-w-2xl text-lg leading-8 text-stone-600">
             Your toolkit is ready. You can download the printable PDF below and
@@ -53,7 +53,7 @@ export default function ToolkitThankYouPage() {
                 Book a Free Consultation
               </Link>
               <Link
-                href="/the-calm-birth-plan-toolkit"
+                href="/birth-plan-toolkit"
                 className="inline-flex items-center justify-center rounded-full border border-stone-300 bg-white px-6 py-3 text-sm font-semibold text-stone-700 transition hover:border-stone-900 hover:text-stone-950"
               >
                 Back to Toolkit Page

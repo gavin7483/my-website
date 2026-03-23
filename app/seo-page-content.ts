@@ -153,20 +153,20 @@ export const seoPages = {
     ],
   },
   "birth-plan-coaching": {
-    title: "Birth Plan Coaching",
+    title: "Birth Plan Review Call",
     metaTitle:
-      "Birth Plan Coaching for Expecting Families | Kimberly Zoltek",
+      "Birth Plan Review Call for Expecting Families | Kimberly Zoltek",
     description:
-      "Get personalized birth plan coaching from Kimberly Zoltek to clarify your preferences, prepare for common decisions, and approach labor with confidence.",
-    eyebrow: "Birth Plan Coaching",
+      "Book a Birth Plan Review Call with Kimberly Zoltek to clarify your preferences, prepare for common decisions, and approach labor with confidence.",
+    eyebrow: "Birth Plan Review Call",
     heroTitle:
       "Create a thoughtful birth plan that reflects your values and prepares you for real decisions.",
     heroDescription:
       "Kimberly Zoltek helps families build flexible, informed birth plans so they can approach labor feeling clear, prepared, and supported rather than overwhelmed.",
-    educationalHeading: "What birth plan coaching should actually do",
+    educationalHeading: "What a birth plan review call should actually do",
     educationalParagraphs: [
       "A good birth plan is not about controlling every detail of labor. It is about understanding your options, clarifying your preferences, and making sure your care team and partner know what matters most to you.",
-      "Birth plan coaching helps families think through pain management, communication, environment, feeding goals, comfort techniques, and how they want to approach common interventions or unexpected changes.",
+      "A birth plan review call helps families think through pain management, communication, environment, feeding goals, comfort techniques, and how they want to approach common interventions or unexpected changes.",
       "Kimberly guides this process with a practical, evidence-based lens so your plan supports both your hopes and the realities of birth.",
     ],
     benefits: [
@@ -177,12 +177,12 @@ export const seoPages = {
     ],
     faqs: [
       {
-        question: "What is included in birth plan coaching?",
+        question: "What is included in a birth plan review call?",
         answer:
           "Families typically review priorities, care preferences, labor coping plans, partner roles, and how to stay flexible if medical needs or labor circumstances shift.",
       },
       {
-        question: "Can birth plan coaching help if I want an unmedicated birth?",
+        question: "Can a birth plan review call help if I want an unmedicated birth?",
         answer:
           "Yes. Kimberly can help you explore coping tools, comfort measures, and communication strategies while also preparing for the possibility that plans may need to adapt.",
       },
