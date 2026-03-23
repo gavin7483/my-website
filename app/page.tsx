@@ -387,7 +387,7 @@ export default function Home() {
       </section>
 
       <section id="contact" className="mx-auto max-w-6xl px-6 py-20 lg:px-8">
-        <div className="grid gap-10 rounded-[2rem] border border-stone-200 bg-white/90 p-8 shadow-[0_24px_60px_rgba(86,68,55,0.08)] lg:grid-cols-[0.88fr_1.12fr] lg:p-12">
+        <div className="grid gap-10 rounded-[2rem] border border-stone-200 bg-white/90 p-8 shadow-[0_24px_60px_rgba(86,68,55,0.08)] lg:grid-cols-[0.88fr_1.12fr] lg:items-start lg:p-12">
           <div>
             <p className="text-sm font-semibold uppercase tracking-[0.24em] text-rose-700">
               Contact
@@ -422,15 +422,20 @@ export default function Home() {
                   Kimberly Zoltek
                 </p>
               </div>
-              <iframe
-                title="Book a free 20 minute consultation with Kimberly Zoltek"
-                src={calendlyUrl}
-                className="h-[700px] w-full"
-              />
+              <div className="relative">
+                <div className="pointer-events-none absolute inset-x-0 top-0 z-10 h-16 bg-[linear-gradient(180deg,#f8faf9_0%,#f8faf9_78%,rgba(248,250,249,0)_100%)]" />
+                <iframe
+                  title="Book a free 20 minute consultation with Kimberly Zoltek"
+                  src={calendlyUrl}
+                  className="mt-[-18px] h-[718px] w-full"
+                />
+              </div>
             </div>
           </div>
 
-          <ContactForm />
+          <div className="lg:pl-2">
+            <ContactForm />
+          </div>
         </div>
       </section>
     </main>

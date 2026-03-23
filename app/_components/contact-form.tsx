@@ -42,7 +42,10 @@ export function ContactForm() {
   }
 
   return (
-    <form className="grid gap-6 self-start rounded-[1.75rem] border border-stone-200 bg-[linear-gradient(180deg,#ffffff_0%,#fcfaf7_100%)] p-6 shadow-sm sm:p-8" onSubmit={handleSubmit}>
+    <form
+      className="grid gap-6 self-start rounded-[1.75rem] border border-stone-200 bg-[linear-gradient(180deg,#ffffff_0%,#fcfaf7_100%)] p-6 shadow-sm sm:p-8"
+      onSubmit={handleSubmit}
+    >
       <div>
         <p className="text-sm font-semibold uppercase tracking-[0.24em] text-rose-700">
           Send a Message
@@ -52,7 +55,7 @@ export function ContactForm() {
         </h3>
       </div>
 
-      <div className="grid gap-x-5 gap-y-5 lg:grid-cols-2 lg:items-start">
+      <div className="grid gap-x-5 gap-y-5 md:grid-cols-2">
         <label className="grid gap-2.5 text-sm font-medium text-stone-700">
           <span>Name</span>
           <input
@@ -60,7 +63,7 @@ export function ContactForm() {
             name="name"
             placeholder="Your full name"
             required
-            className="min-h-11 rounded-[1.15rem] border border-stone-300 bg-white px-4 py-2.5 text-[15px] text-stone-900 outline-none transition focus:border-rose-500"
+            className="h-12 rounded-[1rem] border border-stone-300 bg-white px-4 text-[15px] text-stone-900 outline-none transition focus:border-rose-500"
           />
         </label>
         <label className="grid gap-2.5 text-sm font-medium text-stone-700">
@@ -70,7 +73,7 @@ export function ContactForm() {
             name="email"
             placeholder="you@example.com"
             required
-            className="min-h-11 rounded-[1.15rem] border border-stone-300 bg-white px-4 py-2.5 text-[15px] text-stone-900 outline-none transition focus:border-rose-500"
+            className="h-12 rounded-[1rem] border border-stone-300 bg-white px-4 text-[15px] text-stone-900 outline-none transition focus:border-rose-500"
           />
         </label>
       </div>
@@ -81,13 +84,13 @@ export function ContactForm() {
           name="message"
           placeholder="Tell Kimberly a little about your family and what kind of support would feel most helpful."
           required
-          className="min-h-[10.5rem] rounded-[1.35rem] border border-stone-300 bg-white px-4 py-3 text-[15px] text-stone-900 outline-none transition focus:border-rose-500"
+          className="min-h-[10rem] rounded-[1.2rem] border border-stone-300 bg-white px-4 py-3 text-[15px] text-stone-900 outline-none transition focus:border-rose-500"
         />
       </label>
       <button
         type="submit"
         disabled={status === "submitting"}
-        className="inline-flex items-center justify-center rounded-full bg-rose-700 px-6 py-3 text-sm font-semibold text-white transition hover:bg-rose-800 disabled:cursor-not-allowed disabled:opacity-70"
+        className="mt-1 inline-flex items-center justify-center rounded-full bg-rose-700 px-6 py-3 text-sm font-semibold text-white transition hover:bg-rose-800 disabled:cursor-not-allowed disabled:opacity-70"
       >
         {status === "submitting"
           ? "Sending..."
